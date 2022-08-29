@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi Sri Lanka</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/ico" href="Sources/Images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div name="navigation">
+        <a href="#" class="navigation-option">
+            <img src="Sources/SVGs/audi.svg" alt="logo">
+        </a>
+        <a href="#" class="navigation-option">All Models</a>
+        <a href="#" class="navigation-option">Customer area</a>
+        <a href="#" class="navigation-option">Innovation</a>
+        <a href="#" class="navigation-option">Brand experience</a>
+        <div class="navigation-option">
+            <img src="Sources/SVGs/search.svg" alt="search-icon">
+        </div>
+    </div>
+    <div name="audi-welcome">
+        <section class="content-box">
+            <h1>Progress is not just felt.<br>It is experienced.</h1>
+            <h4>The new A6 Saloon.</h4>
+            <div class="button">
+                Discover now
+            </div>
+        </section>
+    </div>
+    <div name="audi-body" id="viewPort">
+        <section class="content-box" name="modelXbody">
+            <p>
+                <span class="option select">Models</span>
+                <span class="option">Body style</span>
+            </p>
+            <div class="show-controls-wrapper">
+                <div class="show-controls" side="left">
+                    <img src="Sources/SVGs/controller.svg" alt="slide-left" width="50px">
+                </div>
+            </div>
+            <ul name="car-show" by="model">
+                <li class="car" name="a3">
+                    <img src="Sources/Images/Vehicles/side-view/a3.webp" alt="a3">
+                    <img src="Sources/Images/Vehicles/front-view/a3.png" alt="a3">
+                    <span class="model-tag">Audi A3</span>
+                </li>
+                <li class="car" name="a4">
+                    <img src="Sources/Images/Vehicles/side-view/a4.webp" alt="a4">
+                    <img src="Sources/Images/Vehicles/front-view/a4.webp" alt="a4">
+                    <span class="model-tag">Audi A4</span>
+                </li>
+                <li class="car" name="a5">
+                    <img src="Sources/Images/Vehicles/side-view/a5.webp" alt="a5">
+                    <img src="Sources/Images/Vehicles/front-view/a5.png" alt="a5">
+                    <span class="model-tag">Audi A5</span>
+                </li>
+                <li class="car" name="a6">
+                    <img src="Sources/Images/Vehicles/side-view/a6.webp" alt="a6">
+                    <img src="Sources/Images/Vehicles/front-view/a6.webp" alt="a6">
+                    <span class="model-tag">Audi A6</span>
+                </li>
+                <li class="car" name="a7">
+                    <img src="Sources/Images/Vehicles/side-view/a7.webp" alt="a7">
+                    <img src="Sources/Images/Vehicles/front-view/a7.webp" alt="a7">
+                    <span class="model-tag">Audi A7</span>
+                </li>
+                <li class="car" name="a8">
+                    <img src="Sources/Images/Vehicles/side-view/a8.webp" alt="a8">
+                    <img src="Sources/Images/Vehicles/front-view/a8.webp" alt="a8">
+                    <span class="model-tag">Audi A8</span>
+                </li>
+                <li class="car" name="q2">
+                    <img src="Sources/Images/Vehicles/side-view/q2.webp" alt="q2">
+                    <img src="Sources/Images/Vehicles/front-view/q2.webp" alt="q2">
+                    <span class="model-tag">Audi Q2</span>
+                </li>
+                <li class="car" name="q3">
+                    <img src="Sources/Images/Vehicles/side-view/q3.webp" alt="q3">
+                    <img src="Sources/Images/Vehicles/front-view/q3.webp" alt="q3">
+                    <span class="model-tag">Audi Q3</span>
+                </li>
+                <li class="car" name="q5">
+                    <img src="Sources/Images/Vehicles/side-view/q5.webp" alt="q5">
+                    <img src="Sources/Images/Vehicles/front-view/q5.png" alt="q5">
+                    <span class="model-tag">Audi Q5</span>
+                </li>
+                <li class="car" name="q7">
+                    <img src="Sources/Images/Vehicles/side-view/q7.webp" alt="q6">
+                    <img src="Sources/Images/Vehicles/front-view/q7.webp" alt="q6">
+                    <span class="model-tag">Audi Q7</span>
+                </li>
+                <li class="car" name="tt">
+                    <img src="Sources/Images/Vehicles/side-view/tt.webp" alt="tt">
+                    <img src="Sources/Images/Vehicles/front-view/tt.webp" alt="tt">
+                    <span class="model-tag">Audi TT</span>
+                </li>
+            </ul>
+            <div class="show-controls-wrapper" style="right: 0px; 
+            transform: translateY(-100%);">
+                <div class="show-controls" side="right">
+                    <img src="Sources/SVGs/controller.svg" alt="slide-left" width="50px">
+                </div>
+            </div>
+            <hr name="modelShowDevider" style="display: none;">
+            <div name="car-view">
+                <img src="Sources/SVGs/cross.svg" alt="close-btn">
+                <ul name="car-show">
+                    <li class="car" name="a3">
+                        <span class="model-tag view-type">Audi A3</span>
+                        <div class="a-flex">
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/a3.webp" alt="a3">
+                                <span class="model-tag">A3 sedan</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="car" name="a4">
+                        <span class="model-tag view-type">Audi A4</span>
+                        <div class="a-flex">
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/a4.webp" alt="a4">
+                                <span class="model-tag">A4 sedan</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="car" name="a5">
+                        <span class="model-tag view-type">Audi A5</span>
+                        <div class="a-flex">
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/a5.webp" alt="a5">
+                                <span class="model-tag">A5 sportback</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="car" name="a6">
+                        <span class="model-tag view-type">Audi A6</span>
+                        <div class="a-flex">
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/a6.webp" alt="a6">
+                                <span class="model-tag">A6 saloon</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="car" name="a7">
+                        <span class="model-tag view-type">Audi A7</span>
+                        <div class="a-flex">
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/a7.webp" alt="a7">
+                                <span class="model-tag">A7 sportback</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="car" name="a8">
+                        <span class="model-tag view-type">Audi A8</span>
+                        <div class="a-flex">
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/a8.webp" alt="a8">
+                                <span class="model-tag">A8 l</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="car" name="q2">
+                        <span class="model-tag view-type">Audi Q2</span>
+                        <div class="a-flex">
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/q2.webp" alt="q2">
+                                <span class="model-tag">Q2</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="car" name="q3">
+                        <span class="model-tag view-type">Audi Q3</span>
+                        <div class="a-flex">
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/q3.webp" alt="q3">
+                                <span class="model-tag">Q3</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="car" name="q5">
+                        <span class="model-tag view-type">Audi Q5</span>
+                        <div class="a-flex">
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/q5.webp" alt="q5">
+                                <span class="model-tag">Q5</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="car" name="q7">
+                        <span class="model-tag view-type">Audi Q7</span>
+                        <div class="a-flex">
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/q7.webp" alt="q6">
+                                <span class="model-tag">Q7</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="car" name="tt">
+                        <span class="model-tag view-type">Audi TT</span>
+                        <div class="a-flex">
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/tt.webp" alt="tt">
+                                <span class="model-tag">TT Coupé</span>
+                            </div>
+                            <div class="a-block">
+                                <img src="Sources/Images/Vehicles/side-view/tt-2.webp" alt="tt">
+                                <span class="model-tag">TTS Coupé</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="content-box" name="audi-discovers">
+            <div class="audi-discover">
+                <img src="Sources/Images/audi-q3.webp" alt="audi-q3">
+                <section class="content-box">
+                    <div>
+                        The new Audi Q3 <br>
+                        <span>An Allrounder.</span>
+                        <div class="button">
+                            Discover now
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="audi-discover">
+                <img src="Sources/Images/audi-a5.webp" alt="audi-q3">
+                <section class="content-box">
+                    <div>
+                        The A5 Sportback <br>
+                        <span>Emotion and function.</span>
+                        <div class="button">
+                            Discover now
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="content-box" name="may-know">
+            <h1>You may also want to know</h5>
+                <div class="a-flex">
+                    <div class="option">
+                        <img src="Sources/Images/Teaser-row market Q2.webp" alt="market-q2">
+                        <div class="description-link">
+                            <p>Powerful and impressive.</p>
+                            <a href="#">The Audi Q2<span><img src="Sources/SVGs/controller.svg" alt="link-img"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="Sources/Images/Teaser-row market Service.webp" alt="market-service">
+                        <div class="description-link">
+                            <p>Professional Audi competence, highly motivated employees and purpose-designed special
+                                tools.</p>
+                            <a href="#">Audi Service<span><img src="Sources/SVGs/controller.svg" alt="link-img"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <img src="Sources/Images/Teaser-row market FB.webp" alt="market-fb">
+                        <div class="description-link">
+                            <p>Stay tuned with us for the latest news about Audi models and events.</p>
+                            <a href="#">Learn more<span><img src="Sources/SVGs/controller.svg" alt="link-img"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="content-box" name="end-up">
+            <a href="#">Back to top<span><img src="Sources/SVGs/controller.svg" alt="link-img"></span>
+            </a>
+            <div class="a-flex">
+                <div class="a-block">
+                    <span class="title">Model overview</span>
+                    <span>All Models</span>
+                </div>
+                <div class="a-block">
+                    <span class="title">Customer area</span>
+                    <span>Servicing your Audi</span>
+                    <span>Audi services</span>
+                    <span>Audi Genuine Parts</span>
+                    <span>Audi Genuine Accessories</span>
+                </div>
+                <div class="a-block">
+                    <span class="title">Innovation</span>
+                    <span>Vorsprung durch Technik</span>
+                    <span>Audi Sport</span>
+                    <span>Audi quattro</span>
+                </div>
+                <div class="a-block">
+                    <span class="title">Brand experience</span>
+                    <span>Explanatory videos</span>
+                </div>
+            </div>
+            <div class="content-box a-flex" name="social-links">
+                <img src="Sources/SVGs/facebook.svg" alt="sl-fb">
+                <img src="Sources/SVGs/instagram.svg" alt="sl-ig">
+                <img src="Sources/SVGs/youtube.svg" alt="sl-yt">
+            </div>
+            <hr>
+            <p class="a-flex no-opacity" style="margin-top: 30px;">© 2021 AUDI LK. All rights reserved
+                <span>Imprint</span><span>Legal</span>
+            </p>
+        </section>
+    </div>
+</body>
+
+<script>
+    /* Variables */
+    var activeModelElement = undefined;
+    var scrolledTo = 0;
+
+    /* Functions */
+    const handleCar = (event) => {
+        let parent = event.target.parentElement;
+        let index = [...parent.parentElement.childNodes].findIndex(item => item === parent)
+        if (index % 2 !== 0) {
+            index -= 1
+        }
+        if (parent == activeModelElement) {
+            if (parent.classList.contains('active')) {
+                parent.classList.remove('active');
+                handleCarView(false);
+                activeModelElement = parent;
+            } else {
+                parent.classList.add('active');
+                $(parent).center(index / 2);
+                setupCarView(parent.getAttribute('name'));
+                handleCarView();
+                activeModelElement = parent;
+            }
+        } else {
+            if (activeModelElement == undefined) {
+                parent.classList.add('active');
+                $(parent).center(index / 2);
+                setupCarView(parent.getAttribute('name'));
+                handleCarView();
+                activeModelElement = parent;
+            } else {
+                parent.classList.add('active');
+                activeModelElement.classList.remove('active');
+                $(parent).center(index / 2);
+                setupCarView(parent.getAttribute('name'));
+                handleCarView();
+                activeModelElement = parent;
+            }
+        }
+
+    }
+
+    jQuery.fn.center = function (index) {
+        if ($(window).width() / 2 < index * 230) {
+            $("ul[name='car-show'").animate({
+                scrollLeft: (index * 230 - $(window).width() / 2 + 230) + 'px',
+            });
+        }
+    }
+
+    const handleCarView = (showOpen = true) => {
+        toggleShow(showOpen)
+    }
+
+    const toggleShow = (open = false) => {
+        window.scrollTo({ top: document.getElementById("viewPort").offsetTop, behavior: 'smooth' });
+        let viewer = $('body > div:nth-child(3) > section:nth-child(1) > div:nth-child(6)');
+        if (open) {
+            if (viewer.css('display') != "none") {
+                return
+            }
+            $("body > div:nth-child(3) > section:nth-child(1) > hr").css('display', 'block')
+            viewer.css('display', 'inline-grid')
+            viewer.css('animation', 'toggleViewer .5s ease')
+            setTimeout(() => {
+                viewer.css('animation', 'unset')
+            }, 480);
+        } else {
+            viewer.css('animation', 'toggleViewer .5s ease reverse')
+            setTimeout(() => {
+                viewer.css('animation', 'unset')
+                viewer.css('display', 'none')
+                $("body > div:nth-child(3) > section:nth-child(1) > hr").css('display', 'none')
+            }, 480)
+        }
+    }
+
+    const carShowScroll = (side = 'left') => {
+        const element = document.querySelector("#viewPort > section:nth-child(1) > ul");
+        const current = element.scrollLeft;
+        if (side == 'left') {
+            let scrollTo = (current - current % 230) - 230;
+            $("ul[name='car-show'").animate({
+                scrollLeft: scrollTo + 'px',
+            });
+        } else {
+            let scrollTo = (current - current % 230) + 230;
+            $("ul[name='car-show'").animate({
+                scrollLeft: scrollTo + 'px',
+            });
+        }
+    }
+
+    const setupCarView = (model) => {
+        if (activeModelElement !== undefined) {
+            document.querySelector("#viewPort > section:nth-child(1) > div:nth-child(6) > ul > li[name='" + activeModelElement.getAttribute('name') + "']").classList.remove('active');
+        }
+        document.querySelector("#viewPort > section:nth-child(1) > div:nth-child(6) > ul > li[name='" + model + "']").classList.add('active');
+    }
+
+    /* JQuery */
+    $(document).ready(function () {
+        $("body > div:nth-child(3) > section:nth-child(1) > ul > li").each((index, ele) => {
+            $(ele).css('opacity', 0);
+            $(ele).css({ 'animation': 'nm-model-band-strip-animate-in 0.5s ease-out forwards', 'animation-delay': (0.1 * index).toString() + 's' })
+        });
+
+        $("body > div:nth-child(3) > section:nth-child(1) > ul > li").bind('click', handleCar);
+
+        $("#viewPort > section:nth-child(1) > div:nth-child(6) > img").click(() => {
+            toggleShow(false);
+        })
+
+        $("#viewPort > section:nth-child(1) > div:nth-child(2) > div").click(() => {
+            carShowScroll();
+        })
+
+        $("#viewPort > section:nth-child(1) > div:nth-child(4) > div").click(() => {
+            carShowScroll(side = 'right');
+        })
+    }); 
+</script>
+
+</html>

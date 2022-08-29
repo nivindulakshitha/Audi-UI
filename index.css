@@ -1,0 +1,515 @@
+@font-face {
+    font-family: 'AudiType ExtendedNormal';
+    src: local('Audi Type ExtendedNormal'), url('Sources/Fonts/AudiType-ExtendedNormal_4.03.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AudiType Normal';
+    src: local('Audi Type Normal'), url('Sources/Fonts/AudiType-Normal_03.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AudiType WideLight';
+    src: local('Audi Type WideLight'), url('Sources/Fonts/AudiType-WideLight_4.03.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AudiType WideNormal';
+    src: local('Audi Type WideNormal'), url('Sources/Fonts/AudiType-WideNormal_4.03.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'AudiType bold';
+    src: local('Audi Type bold'), url('Sources/Fonts/AudiType-Bold_4.03.ttf') format('truetype');
+}
+
+html,
+body {
+    min-height: -webkit-fill-available;
+    height: 100% !important;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'AudiType Normal';
+    font-weight: lighter;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background: #F50537;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: lighter;
+    z-index: 100;
+    margin-bottom: 0px;
+    margin: 0px;
+}
+
+div[name="navigation"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    height: 72px;
+    width: -webkit-fill-available;
+    padding: 0px 60px;
+}
+
+div[name="navigation"] .navigation-option {
+    font-family: 'AudiType Normal';
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div[name="navigation"] .navigation-option:last-child {
+    margin: 24px 24px 24px auto;
+}
+
+div[name="navigation"] .navigation-option:hover {
+    color: #000000;
+}
+
+body>div[name="audi-welcome"] {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    background-image: url("Sources/Images/cover.webp");
+    width: -webkit-fill-available;
+    height: calc(100vh - 72px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 72px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+
+body>div[name="audi-welcome"]::after {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    content: '';
+    width: 100%;
+    height: calc(100% - 72px);
+    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+}
+
+div[name="audi-welcome"] section.content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    font-family: 'AudiType ExtendedNormal';
+    letter-spacing: -0.015em;
+}
+
+div[name="audi-welcome"] section.content-box h1 {
+    font-size: xx-large;
+}
+
+section.content-box .button {
+    font-size: 16px !important;
+    padding: 16px 32px;
+    z-index: 100;
+    color: #000000;
+    background-color: #FFFFFF;
+    max-width: fit-content;
+    font-family: 'AudiType Normal' !important;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.75, 0.02, 0.5, 1);
+}
+
+section.content-box .button:hover {
+    background-color: #D9D9D9;
+}
+
+div[name="audi-body"] {
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
+}
+
+div[name="audi-body"] .content-box[name="modelXbody"] {
+    position: relative;
+    padding-bottom: 42px;
+}
+
+div[name="audi-body"] .content-box[name="modelXbody"] p {
+    margin: 0 auto 30px;
+    width: 92%
+}
+
+div[name="audi-body"] .content-box[name="modelXbody"] p .option {
+    margin-right: 30px;
+    padding-bottom: 3px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+div[name="audi-body"] .content-box[name="modelXbody"] p .option:not(.select):hover {
+    opacity: .5;
+}
+
+div[name="audi-body"] .content-box[name="modelXbody"] p .option.select {
+    opacity: 1;
+    border-bottom: 1px solid #000
+}
+
+ul[name="car-show"] {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+ul[name="car-show"]::-webkit-scrollbar {
+    display: none;
+}
+
+ul[name="car-show"] li.car {
+    cursor: pointer;
+    list-style-type: none;
+}
+
+ul[name="car-show"] li.car img:nth-child(2) {
+    padding-bottom: 4px;
+    display: none;
+}
+
+ul[name="car-show"] li.car.active img:nth-child(1) {
+    display: none;
+}
+
+ul[name="car-show"] li.car.active img:nth-child(2) {
+    display: block;
+}
+
+ul[name="car-show"] li.car.active span.model-tag {
+    opacity: 1;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+ul[name="car-show"] li.car img {
+    height: auto;
+    width: 230px;
+    transition: transform .3s ease;
+}
+
+ul[name="car-show"] li.car span.model-tag {
+    display: block;
+    width: -webkit-fill-available;
+    font-family: 'AudiType WideLight';
+    text-align: center;
+    font-weight: 600;
+}
+
+ul[name="car-show"] li.car:hover img {
+    transform: scale(1.1);
+}
+
+ul[name="car-show"] li.car:hover span.model-tag {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.show-controls-wrapper {
+    position: absolute;
+    background-color: #FFFFFF;
+    height: 130px;
+    width: 50px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+div.show-controls {
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    height: 70%;
+    background-color: #FFFFFF;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+div.show-controls[side="right"] {
+    right: 0px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: none !important;
+}
+
+div.show-controls[side="right"] img {
+    transform: rotate(180deg);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #000000;
+    opacity: 0.3;
+}
+
+div[name="car-view"] {
+    display: none;
+    grid-gap: 10px;
+    justify-items: center;
+    width: -webkit-fill-available;
+    height: 240px;
+}
+
+div[name="car-view"] img[alt="close-btn"]:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+div[name="car-view"] ul[name="car-show"] .car:not(.active) {
+    display: none;
+}
+
+div[name="car-view"] ul[name="car-show"] .car span.model-tag.view-type {
+    font-size: 1.5rem;
+    text-decoration: none !important;
+    font-family: 'AudiType bold';
+    font-weight: 700;
+}
+
+div[name="car-view"] ul[name="car-show"] .car:hover span.model-tag.view-type {
+    opacity: 1;
+}
+
+div[name="car-view"] ul[name="car-show"] li.car.active span.model-tag {
+    opacity: 1;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
+div[name="car-view"] ul[name="car-show"] li.car.active .a-flex .a-block:hover span.model-tag:not(.view-type) {
+    opacity: 0.8;
+    text-decoration: underline !important;
+}
+
+.a-flex {
+    display: flex;
+}
+
+div[name="car-view"] ul[name="car-show"] li.car.active .a-flex .a-block img {
+    display: block;
+}
+
+div[name="car-view"] ul[name="car-show"] li.car:hover .a-flex .a-block img {
+    transform: scale(1);
+}
+
+div[name="car-view"] ul[name="car-show"] li.car.active .a-flex .a-block:hover img {
+    transform: scale(1.1);
+}
+
+div[name="car-view"] ul[name="car-show"] li.car.active .a-flex .a-block:hover span.model-tag {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+div[name="audi-body"] .content-box[name="audi-discovers"] .audi-discover {
+    display: flex;
+    width: -webkit-fill-available;
+    margin: 200px 4%;
+}
+
+div[name="audi-body"] .content-box[name="audi-discovers"] .audi-discover img {
+    max-width: 620px;
+    height: auto;
+}
+
+div[name="audi-body"] .content-box[name="audi-discovers"] .audi-discover .content-box {
+    display: inline-grid;
+    align-items: center;
+    width: -webkit-fill-available;
+}
+
+.content-box[name="audi-discovers"] .audi-discover .content-box div {
+    font-family: 'AudiType ExtendedNormal';
+    font-size: 100%;
+    padding-left: 50px;
+    font-size: xx-large;
+}
+
+.content-box[name="audi-discovers"] .audi-discover .content-box div span {
+    font-size: 12px;
+    font-family: 'AudiType Normal';
+    opacity: 0.7;
+}
+
+.content-box[name="audi-discovers"] .audi-discover .content-box div .button {
+    margin-top: 40px;
+    padding: 16px 32px !important;
+    background-color: #000000 !important;
+    color: #FFFFFF !important;
+    transition: opacity .3s ease;
+}
+
+.content-box[name="audi-discovers"] .audi-discover .content-box div .button:hover {
+    opacity: .7;
+}
+
+section.content-box[name="may-know"] {
+    margin: 0 auto 60px;
+}
+
+section.content-box[name="may-know"] h1 {
+    font-family: 'AudiType ExtendedNormal';
+    font-size: xx-large;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+section.content-box[name="may-know"] .a-flex {
+    gap: 5px;
+}
+
+section.content-box[name="may-know"] .option img {
+    width: auto;
+    height: 230px;
+}
+
+section.content-box[name="may-know"] .option .description-link p {
+    font-family: 'AudiType WideNormal';
+    margin-top: 5px;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+    max-width: 410px;
+}
+
+section.content-box[name="may-know"] .option .description-link a {
+    text-decoration: none;
+    color: #000000;
+}
+
+section.content-box[name="may-know"] .option .description-link a:hover {
+    opacity: .7;
+}
+
+section.content-box[name="may-know"] .option .description-link a img {
+    transform: rotate(180deg);
+    width: 30px;
+    height: fit-content;
+}
+
+section.content-box[name="may-know"] .option .description-link a span {
+    vertical-align: middle;
+}
+
+section.content-box[name="end-up"] {
+    background-color: #000000;
+    padding: 24px 60px 40px;
+    color: #FFFFFF !important;
+}
+
+section.content-box[name="end-up"] span:hover,
+section.content-box[name="end-up"] img:hover,
+section.content-box[name="end-up"] a:hover,
+section.content-box[name="end-up"] p:not(.no-opacity) {
+    cursor: pointer;
+    opacity: .7;
+}
+
+section.content-box[name="end-up"] *:not(.title) {
+    font-size: 12px;
+}
+
+section.content-box[name="end-up"] a {
+    color: #FFFFFF;
+    text-decoration: none !important;
+    position: absolute;
+    right: 40px;
+}
+
+section.content-box[name="end-up"] a img {
+    transform: rotate(90deg);
+    width: 30px;
+    height: fit-content;
+    filter: invert(100%) sepia(4%) saturate(15%) hue-rotate(357deg) brightness(103%) contrast(103%);
+}
+
+section.content-box[name="end-up"] a span {
+    vertical-align: middle;
+}
+
+section.content-box[name="end-up"] .a-flex {
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+section.content-box[name="end-up"] .a-flex .a-block {
+    width: calc(100% / 3);
+}
+
+section.content-box[name="end-up"] .a-flex .a-block * {
+    display: block;
+    padding-bottom: 20px;
+}
+
+section.content-box[name="end-up"] .a-flex .a-block .title {
+    font-family: 'AudiType ExtendedNormal';
+    font-size: 15px;
+    font-stretch: 130%;
+    margin-bottom: 10px;
+}
+
+section.content-box[name="end-up"] hr {
+    background-color: #FFFFFF !important;
+}
+
+.content-box[name="social-links"] img {
+    filter: invert(100%) sepia(4%) saturate(15%) hue-rotate(357deg) brightness(103%) contrast(103%);
+}
+
+.content-box[name="social-links"] {
+    width: -webkit-fill-available;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+section.content-box[name="end-up"] p span {
+    padding-left: 20px;
+}
+
+@keyframes toggleViewer {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 240px;
+    }
+}
+
+@keyframes nm-model-band-strip-animate-in {
+    0% {
+        opacity: 0;
+        transform: translate3d(-150%, 0, 0);
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
