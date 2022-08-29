@@ -55,7 +55,7 @@
 Audi AG Aktiengesellschaft, commonly referred to as Audi, is a German automotive manufacturer of luxury vehicles headquartered in Ingolstadt, Bavaria, Germany. As a subsidiary of its parent company, the Volkswagen Group, Audi produces vehicles in nine production facilities worldwide. Here is the cloned sales region landing web page of [www.audi.lk](https://www.audi.lk). 
 
 ### Work Exhibit
-<img src="https://github.com/coding-desk20/coding-desk20/blob/main/images/Audi-ui.png" width="50%" height="auto">
+<center><img src="https://github.com/coding-desk20/coding-desk20/blob/main/images/Audi-ui.png" width="75%" height="auto"></center>
 
 
 ### Built With
