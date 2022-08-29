@@ -77,6 +77,8 @@ Audi-main/
       |- Fonts/
       |- Images/
       |    |- Vehicles/
+      |         |- front-view/
+      |         |- side-view/
       |- SVGs/
 ```
 
