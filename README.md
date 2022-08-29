@@ -72,7 +72,6 @@ All credit goes to [audi.lk](https://www.audi.lk)
 Audi-main/
   |- index.html
   |- index.css
-  |- JQuery.min.js
   |- Sources/
       |- Fonts/
       |- Images/
