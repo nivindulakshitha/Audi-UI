@@ -53,19 +53,21 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 Audi AG Aktiengesellschaft, commonly referred to as Audi, is a German automotive manufacturer of luxury vehicles headquartered in Ingolstadt, Bavaria, Germany. As a subsidiary of its parent company, the Volkswagen Group, Audi produces vehicles in nine production facilities worldwide. Here is the cloned sales region landing web page of [www.audi.lk](https://www.audi.lk). 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Work Exhibit
-<center><img src="https://github.com/coding-desk20/coding-desk20/blob/main/images/Audi-ui.png" width="75%" height="auto"></center>
-
+<center><img src="https://github.com/coding-desk20/coding-desk20/blob/main/images/Audi-ui.png" width="100%" height="auto"></center>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 Here are languages and a few major frameworks/libraries used to boot up my project. You might have to set up your environment to run these smoothly and prefer their official documentation to more informative content if it's required.
 
 [![html][html.com]][html-url] [![css][css.com]][css-url] [![JavaScript][JavaScript.com]][JavaScript-url] [![JQuery][JQuery.com]][JQuery-url]
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Credit to
 All credit goes to [audi.lk](https://www.audi.lk)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### What's Included
 ```text
