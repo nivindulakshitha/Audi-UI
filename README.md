@@ -66,7 +66,8 @@ Here are languages and a few major frameworks/libraries used to boot up my proje
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Credit to
-All credit goes to [audi.lk](https://www.audi.lk)
+All credit goes to [www.audi.lk](https://www.audi.lk)<br>
+<a href="https://www.audi.lk"><img src="https://www.audi.lk/bin/nemo.static.20220823071310/cms4i-nemo/assets/icons/safari/pinfavicon.svg" height="100px" width="auto"></a>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### What's Included
