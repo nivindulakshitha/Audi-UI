@@ -3,7 +3,7 @@
     <img src="https://github.com/coding-desk20/coding-desk20/blob/main/images/CD_LOGO.png?raw=true" alt="Logo" width="auto" height="150">
   </a>
   <h3>Audi Sri Lanka Landing Page UI Clone</h3>
-  <p align="center"> Progress is not just felt. It is experienced.
+  <p align="center"><i>Progress is not just felt. It is experienced.</i>
     <br />
     <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/coding-desk20/audi-ui" target="_blank"><strong>Get this repository »</strong></a>
     <br />
@@ -34,7 +34,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#work-exhibit">Work Exhibit</li>
+        <li><a href="#work-preview">Work Preview</li>
         <li><a href="#built-with">Built With</a></li>
         <li><a href="#credit-to">Credit To</a></li>
         <li><a href="#whats-included">What's Included</li>
@@ -55,7 +55,7 @@
 Audi AG Aktiengesellschaft, commonly referred to as Audi, is a German automotive manufacturer of luxury vehicles headquartered in Ingolstadt, Bavaria, Germany. As a subsidiary of its parent company, the Volkswagen Group, Audi produces vehicles in nine production facilities worldwide. Here is the cloned sales region landing web page of [www.audi.lk](https://www.audi.lk). 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Work Exhibit
+### Work Preview
 <center><img src="https://github.com/coding-desk20/coding-desk20/blob/main/images/Audi-ui.png" width="100%" height="auto"></center>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
