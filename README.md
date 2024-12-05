@@ -56,7 +56,7 @@ Audi AG Aktiengesellschaft, commonly referred to as Audi, is a German automotive
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Work Preview
-<center><img src="https://github.com/coding-desk20/coding-desk20/blob/main/images/Audi-ui.png" width="100%" height="auto"></center>
+<center><img src="https://media.licdn.com/dms/image/v2/D5622AQFw3f6BRD1Pzg/feedshare-shrink_800/feedshare-shrink_800/0/1732388776488?e=1736380800&v=beta&t=sXoOShj-z4SrwGgj7-ctwVZAf1nFfY6SjbA1fifCJYA" width="100%" height="auto"></center>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
